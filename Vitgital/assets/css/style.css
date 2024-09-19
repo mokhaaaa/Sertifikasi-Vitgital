@@ -1,0 +1,234 @@
+/* Style untuk header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .main-logo {
+    height: 70px; /* Besarkan ukuran logo */
+}
+
+.brand-name {
+    font-size: 36px; /* Besarkan ukuran tulisan VITGITAL */
+    font-weight: bold;
+    color: #049ecf;
+    margin-left: 15px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.header-actions img.cart-icon {
+    height: 30px; /* Kecilkan ukuran logo keranjang */
+}
+
+.header-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-nav ul li {
+    margin-right: 20px;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-nav ul li a:hover {
+    border-bottom: 2px solid #2596be;
+}
+
+.header-actions img.cart-icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+.header-actions img.cart-icon:hover {
+    border-bottom: 2px solid #2596be;
+}
+
+
+
+/* Mengatur tampilan header agar elemen sejajar */
+.header-nav ul,
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-actions a,
+.header-nav ul li a {
+    padding: 10px 15px;
+}
+
+/* Tambahkan margin-top ke konten agar tidak tertutup oleh header */
+main {
+    background-color: #f6f9ff;
+    /* Berikan margin atas agar konten tidak tertutup oleh header */
+}
+
+/* Style untuk produk */
+.products {
+    margin: 20px 0;
+}
+
+.products .card {
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.products .card img {
+    border-radius: 5px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.produk-kategori-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2596be;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Kategori card di kiri */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #2596be; /* Ubah warna background pada kategori produk */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-group-item {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #f8f9fa; /* Ganti warna kategori ke warna netral */
+    color: #333; /* Ubah warna font menjadi hitam */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #2596be; /* Warna hover menjadi biru */
+    color: #fff; /* Warna teks saat hover */
+}
+
+/* Gaya untuk judul Produk & Kategori */
+.produk-kategori-title {
+    font-family: 'Poppins', sans-serif; /* Gunakan font Poppins atau font yang bagus */
+    font-size: 36px;
+    font-weight: 700;
+    color: #2596be;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Tombol spacing */
+.btn {
+    margin-left: 10px;
+}
+
+/* Styling untuk tombol CTA agar serupa dengan tombol Beli */
+.cta .cta-btn,
+.btn {
+    background-color: #2596be; /* Warna tombol beli dan CTA sama */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta .cta-btn:hover,
+.btn:hover {
+    background-color: #1e7a9e; /* Efek hover lebih gelap */
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #cddfff;
+    text-align: center;
+}
+
+.footer .copyright,
+.footer .credits {
+    color: #012970;
+}
+
+.cta {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/Vitgital/img/cta.jpg") fixed center center;
+    background-size: auto;
+    padding: 60px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta .cta-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta .cta-btn:hover {
+    background: #1e7a9e; /* Sesuaikan efek hover pada CTA */
+    border-color: #1e7a9e;
+    color: #fff;
+}
